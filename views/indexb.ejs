@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<h1>Name: <%=name%></h1>
+		<p>Price: <%=price%></p>
+		<p>Time of Manufacture: <%=time%></p>
+		<form action="/mo2" method="POST">
+			<input type="hidden" name="Id" value="<%=id%>" />
+			<input name="comname" type="text" placeholder="Name of the company" />
+			<input type="text" placeholder="Node Location" name="location" />
+			<input type="number" placeholder="Rating for Delivery" name="rate1" min='1' max='10' width="100" />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html> 
